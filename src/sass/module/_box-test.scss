@@ -1,0 +1,11 @@
+@use "global" as *;
+.box-test {
+  // size
+  display: inline-block;
+  max-width: rem(600);
+  width: 100%;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

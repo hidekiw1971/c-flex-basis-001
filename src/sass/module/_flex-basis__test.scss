@@ -1,0 +1,29 @@
+@use "global" as *;
+.flex-basis__test {
+  display: flex;
+  flex-wrap: wrap;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.flex-basis__test li:nth-child(1) {
+  flex-basis: rem(200);
+  background-color: #ff7f50;
+}
+
+.flex-basis__test li:nth-child(2) {
+  flex-basis: rem(150);
+  background-color: #ff69b4;
+}
+
+.flex-basis__test li:nth-child(3) {
+  flex-basis: rem(150);
+  background-color: #008000;
+}
+
+.flex-basis__test li:nth-child(4) {
+  flex-basis: rem(100);
+  background-color: #ffd700;
+}
